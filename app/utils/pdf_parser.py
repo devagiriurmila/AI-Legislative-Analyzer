@@ -5,7 +5,7 @@ from typing import Union
 import pdfplumber
 
 from app.utils.text_cleaner import clean_text, remove_headers_footers
-
+# Updated by Devagiri
 
 def extract_text_from_bytes(pdf_bytes: bytes) -> str:
     """Extract and clean text from raw PDF bytes."""

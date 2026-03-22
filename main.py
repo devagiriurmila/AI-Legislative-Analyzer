@@ -16,8 +16,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+
 app.include_router(summarize.router, prefix="/api", tags=["Summarize"])
 app.include_router(upload.router, prefix="/api", tags=["Upload"])
+
 
 @app.get("/")
 def root():
